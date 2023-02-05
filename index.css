@@ -134,11 +134,21 @@
     border: solid #0078c2 5px;
   }
 
-  #rare-image{
+  .rare-div{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .rare-image{
+    width: 25vw;
+  }
+
+  @media (max-width: 1380px){
+    .rare-image{
+      width: 50vw;
+    }
   }
 
   hr{
