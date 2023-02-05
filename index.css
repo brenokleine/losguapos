@@ -16,7 +16,6 @@
     text-align: center;
     align-items: center;
     justify-content: space-around;
-
   }
 
   .links-index>button{
@@ -59,13 +58,41 @@
     text-decoration: none;
     border-radius: 5vh;
     z-index: 1;
-    padding: 6vh;
-    margin: -6vh;
+    padding: 4vw;
+    margin: -4vw;
     position: relative;
   }
 
   .links-index>a:hover{
     background-color: #005a92;
+  }
+
+  @media (max-width: 660px){
+    #nav-logo-csgo{
+      display: none;
+    }
+
+    #nav-logo{
+      width: 20vw;
+    }
+
+    .links-index{
+      font-size: 5vw;
+    }
+
+    .nav{
+      min-height: 5em;
+    }
+
+    .links-index>button{
+      display: none;
+    }
+
+    .links-index>a{
+      color: white;
+      text-decoration: none;
+      border-radius: 5vh;
+    }
   }
 
   body{
@@ -157,7 +184,15 @@
   #team-history-p3{
     display: flex; 
     align-items: center;
-    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+
+  #team-history-p3>h2{
+    width: 50vw;
+  }
+
+  .warrior{
+    width: 20vw;
   }
 
   @media (max-width: 799px){
@@ -167,8 +202,17 @@
       justify-content: center;
       align-items: center;
     }
+
+    .warrior{
+      width: 40vw;
+    }
   }
 
+  @media (max-width: 580px){
+    h1, h3, h2, h4{
+      text-align: start;
+    }
+  }
 
   footer{
     bottom: 0;
