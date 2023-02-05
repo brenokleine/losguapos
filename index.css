@@ -1,0 +1,202 @@
+  
+  *{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    box-sizing: border-box;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+
+  .nav{
+    background-color: #0078c2;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+
+  .links-index>button{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    border: solid rgb(226, 226, 1) 3px;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    font-size: 24px;
+    color: whitesmoke; 
+  }
+  .links-index>button:hover{
+    cursor:pointer;
+  }
+  .links-index>button:active{
+    background-color: whitesmoke;
+    color: black;
+  }
+
+  #nav-logo, #nav-logo-csgo{
+    width: 170px;
+  }
+
+  .links-index{
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5vw;
+    
+  }
+  
+  .links-index>a {
+    color: white;
+    text-decoration: none;
+    border-radius: 5vh;
+    z-index: 1;
+    padding: 6vh;
+    margin: -6vh;
+    position: relative;
+  }
+
+  .links-index>a:hover{
+    background-color: #005a92;
+  }
+
+  body{
+    background-color: whitesmoke;
+  }
+
+  #img-trofeu{
+    width: 50vw; 
+    border-radius: 700px; 
+    margin: 5vh;
+    float: right;
+  }
+
+  @media (max-width: 1380px){
+    #img-trofeu{
+      margin: 5vh;
+    }
+
+    #img-trofeu-div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  h1, h3, h2, h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 3vh;
+    text-align: justify;
+  }
+
+  h1{
+    font-size: 35px;
+    border-bottom: #0078c2 solid 3px;
+    width: fit-content;
+  }
+
+  img{
+    border: solid #0078c2 5px;
+  }
+
+  #rare-image{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  hr{
+    border: solid 5px #0078c2;
+    border-radius: 5vh;
+    margin: 2vh;
+  }
+
+  #team-history{
+    display: block;
+  }
+
+  #team-history>h2{
+    margin-bottom: 0;
+  }
+
+  #team-history-p2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3vh;
+  }
+
+  #persecuted-img{
+    width: 35vw;
+  }
+  
+  @media (max-width: 1440px) {
+    #team-history-p2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 1000px){
+    #persecuted-img{
+      width: 80%;
+    }
+  }
+
+  #team-history-p3{
+    display: flex; 
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  @media (max-width: 799px){
+    #team-history-p3{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+
+  footer{
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+a#link-footer{
+    text-decoration: none;
+    font-style: italic;
+    color: whitesmoke;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+a#link-footer:hover{
+    color: #0078c2;
+    font-weight: bold;
+}
+  
