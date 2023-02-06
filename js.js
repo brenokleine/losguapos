@@ -1,7 +1,4 @@
 
-//TODO: Event listener para dark mode
-
-
 function darkmode() {
     
     let btn = document.getElementById("darkmode")
@@ -20,9 +17,4 @@ function darkmode() {
         document.body.style.backgroundColor = "#f5f5f5"
         document.body.style.color = "#000000"
      }
-
-        
-
-    
-
 }

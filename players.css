@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    box-sizing: border-box;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+
+  body{
+    background-color: whitesmoke;
+  }
+
+  .content{
+    
+  }
+
+  .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+    
+  }
+
+  .team{
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .player>img{
+    width: 16vw;
+    height: 16vw;
+    
+  }
+
+  @media (max-width: 799px){
+    .player>img{
+      width: 30vw;
+      height: 30vw;
+      
+    }
+  }
+
+
+  .player{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
