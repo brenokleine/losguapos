@@ -131,7 +131,7 @@
 
   @media (max-width: 1380px){
     #img-trofeu{
-      margin: 5vh;
+      display: none;
     }
 
     #img-trofeu-div{
@@ -157,8 +157,6 @@
       width: 50vw;
     }
   }
-
-  
 
   #team-history{
     display: block;
@@ -224,6 +222,18 @@
   @media (max-width: 580px){
     h1, h3, h2, h4{
       text-align: start;
+    }
+
+    .warrior{
+      display: none;
+    }
+
+    #team-history-p3{
+      align-items: flex-start;
+    }
+
+    #team-history-p3>h2{
+      width: fit-content;
     }
   }
 
