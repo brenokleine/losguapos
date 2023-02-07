@@ -12,11 +12,7 @@
   body{
     background-color: whitesmoke;
   }
-
-  .content{
-    
-  }
-
+  
   .title{
     display: flex;
     flex-direction: row;
@@ -24,20 +20,17 @@
     margin-bottom: 15px;
     
   }
-
+  
   .team{
     display: flex;
     gap: 1vw;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 3%;
   }
-
-  .player>img{
-    width: 16vw;
-    height: 16vw;
-    
-  }
-
+  
+  
   @media (max-width: 799px){
     .player>img{
       width: 30vw;
@@ -45,12 +38,42 @@
       
     }
   }
-
-
+  
   .player{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+  }
+  
+  .player>img{
+    width: 16vw;
+    height: 16vw;
+    
   }
 
+  .team a {
+    color: black;
+    text-decoration: none;
+    border-radius: 15px;
+  }
+
+  .team a:hover{
+    background-color: #0078c2;
+    color: whitesmoke;
+  }
+
+  footer{
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+  

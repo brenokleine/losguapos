@@ -28,6 +28,7 @@
 
   img{
     border: solid #0078c2 5px;
+    border-radius: 15px;
   }
 
   hr{

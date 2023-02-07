@@ -9,6 +9,8 @@ function darkmode() {
         btn.value = "ON"
         document.body.style.backgroundColor = "#282a36"
         document.body.style.color = "#f5f5f5"
+        document.querySelectorAll(".linkpfp").forEach(link => { link.style.color = "#f5f5f5"})
+
      } 
      else if(btn.value == "ON"){
         btn.className = "fa fa-moon-o"
@@ -16,5 +18,6 @@ function darkmode() {
         btn.value = "OFF"
         document.body.style.backgroundColor = "#f5f5f5"
         document.body.style.color = "#000000"
+        document.querySelectorAll(".linkpfp").forEach(link => { link.style.color = "#000000"})
      }
 }
