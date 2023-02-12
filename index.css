@@ -96,34 +96,6 @@
     background-color: #005a92;
   }
 
-  @media (max-width: 660px){
-    #nav-logo-csgo{
-      display: none;
-    }
-
-    #nav-logo{
-      width: 20%;
-    }
-
-    .links-index{
-      font-size: 5vw;
-    }
-
-    .nav{
-      min-height: 5em;
-    }
-
-    .links-index>button{
-      display: none;
-    }
-
-    .links-index>a{
-      color: white;
-      text-decoration: none;
-      border-radius: 5vh;
-    }
-  }
-
   #img-trofeu{
     width: 50vw; 
     border-radius: 700px; 
@@ -131,34 +103,7 @@
     float: right;
   }
 
-  @media (max-width: 1380px){
-    #img-trofeu{
-      display: none;
-    }
-
-    #img-trofeu-div{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-
-  .rare-div{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .rare-image{
-    width: 25vw;
-  }
-
-  @media (max-width: 1380px){
-    .rare-image{
-      width: 50%;
-    }
-  }
+  
 
   #team-history{
     display: block;
@@ -179,64 +124,8 @@
     width: 35%;
   }
   
-  @media (max-width: 1440px) {
-    #team-history-p2{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-  }
-
-  @media (max-width: 1000px){
-    #persecuted-img{
-      width: 80%;
-    }
-  }
-
-  #team-history-p3{
-    display: flex; 
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
-  #team-history-p3>h2{
-    width: 50vw;
-  }
-
   .warrior{
-    width: 20vw;
-  }
-
-  @media (max-width: 799px){
-    #team-history-p3{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .warrior{
-      width: 40vw;
-    }
-  }
-
-  @media (max-width: 580px){
-    h1, h3, h2, h4{
-      text-align: start;
-    }
-
-    .warrior{
-      display: none;
-    }
-
-    #team-history-p3{
-      align-items: flex-start;
-    }
-
-    #team-history-p3>h2{
-      width: fit-content;
-    }
+    width: 40vw;
   }
 
   footer{
@@ -268,4 +157,117 @@ a#link-footer:hover{
     color: #0078c2;
     font-weight: bold;
 }
+
+@media (max-width: 660px){
+  #nav-logo-csgo{
+    display: none;
+  }
+
+  #nav-logo{
+    width: 20%;
+  }
+
+  .links-index{
+    font-size: 5vw;
+  }
+
+  .nav{
+    min-height: 5em;
+  }
+
+  .links-index>button{
+    display: none;
+  }
+
+  .links-index>a{
+    color: white;
+    text-decoration: none;
+    border-radius: 5vh;
+  }
+}
   
+@media (max-width: 1380px){
+  #img-trofeu{
+    display: none;
+  }
+
+  #img-trofeu-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.rare-div{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rare-image{
+  width: 25vw;
+}
+
+@media (max-width: 1380px){
+  .rare-image{
+    width: 50%;
+  }
+}
+
+@media (max-width: 1440px) {
+  #team-history-p2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+#team-history-p3{
+  display: flex; 
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#team-history-p3>h2{
+  width: 50vw;
+}
+
+.warrior{
+  width: 20vw;
+}
+
+@media (max-width: 1000px){
+  #persecuted-img{
+    width: 80%;
+  }
+}
+
+@media (max-width: 799px){
+  #team-history-p3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 580px){
+  h1, h3, h2, h4{
+    text-align: start;
+  }
+
+  .warrior{
+    display: none;
+  }
+
+  #team-history-p3{
+    align-items: flex-start;
+  }
+
+  #team-history-p3>h2{
+    width: fit-content;
+  }
+}
