@@ -11,7 +11,10 @@
 
   body{
     background-color: whitesmoke;
-    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
   }
   
   .title{
@@ -23,12 +26,13 @@
   }
   
   .team{
-    display: flex;
-    gap: 20px;
-    justify-content: space-evenly;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
     align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 3%;
+    justify-content: center;
+    
   }
   
   .linkpfp{
@@ -77,14 +81,26 @@
     
 }
 
-@media (max-width: 799px){
-  .player>img{
-    width: 30vw;
-    height: 30vw;
-    
+
+
+@media (max-width: 800px){
+  .team{
+    grid-template-columns: 1fr 1fr;
   }
 }
 
+@media (max-width: 520px){
+  .team{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* display: grid;
+gap: 40px;
+grid-template-columns: repeat(3, 1fr);
+width: 100%;
+align-items: center;
+justify-content: center; */
 
 
   
