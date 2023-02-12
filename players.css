@@ -31,15 +31,6 @@
     margin-bottom: 3%;
   }
   
-  
-  @media (max-width: 799px){
-    .player>img{
-      width: 30vw;
-      height: 30vw;
-      
-    }
-  }
-  
   .linkpfp{
     display: flex;
     flex-direction: column;
@@ -85,5 +76,15 @@
     align-items: center;
     
 }
+
+@media (max-width: 799px){
+  .player>img{
+    width: 30vw;
+    height: 30vw;
+    
+  }
+}
+
+
 
   
