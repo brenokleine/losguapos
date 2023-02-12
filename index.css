@@ -35,7 +35,7 @@
 
   hr{
     border: solid 5px #0078c2;
-    border-radius: 5vh;
+    border-radius: 15px;
     margin: 15px;
   }
 
@@ -99,11 +99,9 @@
   #img-trofeu{
     width: 50vw; 
     border-radius: 700px; 
-    margin: 5vh;
+    margin: 25px;
     float: right;
   }
-
-  
 
   #team-history{
     display: block;
@@ -158,6 +156,31 @@ a#link-footer:hover{
     font-weight: bold;
 }
 
+.rare-div{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rare-image{
+  width: 25vw;
+}
+
+#team-history-p3{
+  display: flex; 
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#team-history-p3>h2{
+  width: 50vw;
+}
+
+.warrior{
+  width: 20vw;
+}
+
 @media (max-width: 660px){
   #nav-logo-csgo{
     display: none;
@@ -185,8 +208,11 @@ a#link-footer:hover{
     border-radius: 5vh;
   }
 }
-  
+
 @media (max-width: 1380px){
+  .rare-image{
+    width: 50%;
+  }
   #img-trofeu{
     display: none;
   }
@@ -198,22 +224,6 @@ a#link-footer:hover{
   }
 }
 
-.rare-div{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.rare-image{
-  width: 25vw;
-}
-
-@media (max-width: 1380px){
-  .rare-image{
-    width: 50%;
-  }
-}
 
 @media (max-width: 1440px) {
   #team-history-p2{
@@ -222,20 +232,6 @@ a#link-footer:hover{
     align-items: center;
     flex-wrap: wrap;
   }
-}
-
-#team-history-p3{
-  display: flex; 
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-#team-history-p3>h2{
-  width: 50vw;
-}
-
-.warrior{
-  width: 20vw;
 }
 
 @media (max-width: 1000px){
