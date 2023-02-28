@@ -35,39 +35,27 @@
     
   }
   
+  .linkpfp:hover{
+    background-color: #0078c2;
+    color: whitesmoke;
+  }
   .linkpfp{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: black;
     text-decoration: none;
     border-radius: 15px;
     font-family: Arial;
     font-size: 20px;
-    
+    color: black;
   }
 
-  .linkpfp:hover{
-    background-color: #0078c2;
-    color: whitesmoke;
-  }
-  
   .linkpfp>p{
     margin: 10px;
+    
   }
-
-  /* .team a {
-    color: black;
-    text-decoration: none;
-    border-radius: 15px;
-  }
-
-  .team a:hover{
-    background-color: #0078c2;
-    color: whitesmoke;
-  } */
-
+  
 
   footer{
     bottom: 0;
@@ -81,8 +69,6 @@
     
 }
 
-
-
 @media (max-width: 800px){
   .team{
     grid-template-columns: 1fr 1fr;
@@ -95,12 +81,6 @@
   }
 }
 
-/* display: grid;
-gap: 40px;
-grid-template-columns: repeat(3, 1fr);
-width: 100%;
-align-items: center;
-justify-content: center; */
 
 
   
