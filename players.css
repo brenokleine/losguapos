@@ -3,10 +3,7 @@
     padding: 0;
     font-weight: normal;
     box-sizing: border-box;
-  }
-  
-  ol, ul {
-    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
   body{
@@ -35,26 +32,41 @@
     
   }
   
-  .linkpfp:hover{
-    background-color: #0078c2;
-    color: whitesmoke;
-  }
-  .linkpfp{
+  .lightmode .linkpfp{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     border-radius: 15px;
-    font-family: Arial;
     font-size: 20px;
     color: black;
+    gap: 5px;
+    padding: 5px;
+    transition: 0.2s;
+  }
+  .lightmode .linkpfp:hover{
+    background-color: #0078c2;
+    color: whitesmoke;
+  }
+  
+  .darkmode .linkpfp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 20px;
+    color: whitesmoke;
+    gap: 5px;
+    padding: 5px;
+    transition: 0.2s;
+  }
+  .darkmode .linkpfp:hover{
+    background-color: #0078c2;
   }
 
-  .linkpfp>p{
-    margin: 10px;
-    
-  }
 
 @media (max-width: 800px){
   .team{
