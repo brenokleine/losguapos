@@ -19,6 +19,8 @@ darkbtn.addEventListener('click', function() {
       let pListArray = Array.prototype.slice.call(pList)
 
       pListArray.forEach(element => {element.style.color = "#000000"})
+
+      
    }
 })
 
