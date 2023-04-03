@@ -11,10 +11,15 @@
     list-style: none;
   }
 
+  html{
+    height: 100%;
+  }
+
   body{
     background-color: whitesmoke;
-    max-width: 100%;
-    max-height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   h1, h3, h2, h4{
@@ -23,8 +28,9 @@
   }
 
   h1{
-    font-size: 35px;
-    border-bottom: #0078c2 solid 3px;
+    font-size: 45px;
+    border-bottom: #0078c2 solid 5px;
+    border-radius: 10px;
     width: fit-content;
   }
 
@@ -44,21 +50,24 @@
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     
   }
 
   #darkmode{
     background-color: #282a36;
-    width: 50px;
-    height: 50px;
-    border-radius: 40px;
-    border: solid rgb(226, 226, 1) 3px;
+    width: 40px;
+    height: 40px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: solid rgb(226, 226, 1) 2px;
+    border-top: none;
     position: fixed;
-    left: 10px;
-    top: 10px;
-    font-size: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0%;
+    font-size: 23px;
     color: whitesmoke; 
   }
   #darkmode:hover{
@@ -78,7 +87,7 @@
     font-size: 3em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
-    justify-content:center;
+    justify-content: flex-start;
     align-items: center;
     gap: 25px;
     
@@ -88,44 +97,25 @@
     color: white;
     text-decoration: none;
     border-radius: 15px;
-    padding: 30px;
-    
-
+    padding: 20px;
+    transition: 0.2s;
   }
 
   .links-index>a:hover{
     background-color: #005a92;
   }
 
-  #img-trofeu{
-    width: 50vw; 
-    border-radius: 700px; 
-    margin: 25px;
-    float: right;
-  }
 
-  #team-history{
-    display: block;
-  }
-
-  #team-history>h2{
-    margin-bottom: 0;
-  }
-
-  #team-history-p2{
+  .whoarewe{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15px;
+    
   }
 
-  #persecuted-img{
-    width: 35%;
+  #trofeu{
+    width: 40%;
+    margin: 20px;
   }
-  
-  .warrior{
-    width: 40vw;
-  }
+
 
   footer{
     background-color: #005a92;
@@ -137,6 +127,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 15px;
+    
 }
 
 footer h6{
@@ -149,49 +140,6 @@ footer h6{
     text-decoration: none;
     padding: 5px;
     
-}
-
-.rare-div{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.rare-image{
-  width: 25vw;
-}
-
-#team-history-p3{
-  display: flex; 
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-#team-history-p3>h2{
-  width: 50vw;
-}
-
-.warrior{
-  width: 20vw;
-}
-
-@media (max-width: 580px){
-  h1, h3, h2, h4{
-    text-align: start;
-  }
-
-  .warrior{
-    display: none;
-  }
-
-  #team-history-p3{
-    align-items: flex-start;
-  }
-
-  #team-history-p3>h2{
-    width: fit-content;
-  }
 }
 
 @media (max-width: 1120px){
@@ -239,46 +187,6 @@ footer h6{
     grid-area: logo;
     width: 80%;
     justify-self: center;
-  }
-}
-
-@media (max-width: 799px){
-  #team-history-p3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media (max-width: 1000px){
-  #persecuted-img{
-    width: 80%;
-  }
-}
-
-@media (max-width: 1380px){
-  .rare-image{
-    width: 50%;
-  }
-  #img-trofeu{
-    display: none;
-  }
-
-  #img-trofeu-div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-
-@media (max-width: 1440px) {
-  #team-history-p2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
   }
 }
 
