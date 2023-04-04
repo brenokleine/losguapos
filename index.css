@@ -23,8 +23,7 @@
   }
 
   h1, h3, h2, h4{
-    margin: 15px;
-    text-align: justify;
+    text-align:left;
   }
 
   h1{
@@ -34,10 +33,6 @@
     width: fit-content;
   }
 
-  img{
-    border: solid #0078c2 5px;
-    border-radius: 15px;
-  }
 
   hr{
     border: solid 5px #0078c2;
@@ -52,7 +47,10 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    
+  }
+
+  #nav-logo-csgo{
+    height: 170px;
   }
 
   #darkmode{
@@ -108,12 +106,17 @@
 
   .whoarewe{
     display: flex;
-    
+    gap: 15px;
+    margin: 15px;
   }
 
-  #trofeu{
-    width: 40%;
-    margin: 20px;
+  .whoarewe h1{
+    margin-bottom: 15px;
+  }
+
+  #cs2banner{
+    width: 500px;
+    border-radius: 10px;
   }
 
 
@@ -160,6 +163,15 @@ footer h6{
   }
 }
 
+@media (max-width: 1002px){
+
+  .whoarewe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media (max-width: 595px){
   .nav{
     display: grid;
@@ -187,6 +199,10 @@ footer h6{
     grid-area: logo;
     width: 80%;
     justify-self: center;
+  }
+
+  #cs2banner{
+    width: 90vw;
   }
 }
 
