@@ -6,6 +6,10 @@
   box-sizing: border-box;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
+
+  body::-webkit-scrollbar{
+    display: none;
+  }
   
   ol, ul {
     list-style: none;
@@ -37,7 +41,7 @@
   hr{
     border: solid 5px #0078c2;
     border-radius: 15px;
-    margin: 15px;
+    margin: 5px;
   }
 
   .nav{
@@ -104,20 +108,54 @@
     color: black;
   }
 
-  
-
   .whoarewe{
     display: flex;
     gap: 15px;
-    margin: 15px;
+    margin: 50px;
+    
   }
-
 
   #cs2banner{
     width: 500px;
     border-radius: 10px;
   }
 
+  #raisingflag, #losguapos{
+    width: 400px;
+  }
+
+  .history{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      
+    ;
+  }
+
+
+  .history-p1{
+    grid-area: p1;
+  }
+
+  #raisingflag{
+    grid-area: flag;
+  }
+
+  .history-p2{
+    grid-area: p2;
+  }
+
+  #losguapos{
+    grid-area: losguapos;
+  }
+
+  .history-p3{
+    grid-area: p3;
+  }
+
+  .history-img{
+    width: 320px;
+  }
 
   footer{
     background-color: #005a92;
@@ -145,7 +183,7 @@ footer h6{
 }
 
 
-@media (max-width: 1002px){
+@media (max-width: 1170px){
 
   .whoarewe{
     display: flex;
@@ -154,7 +192,7 @@ footer h6{
   }
 }
 
-@media (max-width: 802px){
+@media (max-width: 810px){
   #nav-logo-csgo-link, #nav-logo-csgo{
     display: none;
   }
@@ -180,7 +218,7 @@ footer h6{
   }
 }
 
-@media (max-width: 545px){
+@media (max-width: 550px){
   .links-index{
     display: flex;
     flex-direction: column;

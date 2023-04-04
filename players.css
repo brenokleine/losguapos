@@ -12,10 +12,15 @@
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    overflow:scroll;
   }
 
   img{
     border-radius: 15px;
+  }
+
+  #nav-logo-csgo{
+    border-radius: 0px;
   }
   
   .title{
