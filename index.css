@@ -35,7 +35,6 @@
     border-bottom: #0078c2 solid 5px;
     border-radius: 10px;
     width: fit-content;
-    margin-bottom: 15px;
   }
 
   hr{
@@ -115,6 +114,10 @@
     
   }
 
+  .whoarewe h1{
+    margin-bottom: 20px;
+  }
+
   #cs2banner{
     width: 500px;
     border-radius: 10px;
@@ -124,37 +127,75 @@
     width: 400px;
   }
 
+
   .history{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-      
-    ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 50px;
   }
 
+  .history-title{
+    margin-bottom: 20px;
+  }
+
+  .history-content{
+    display: grid;
+    grid-template-columns: repeat(2, 550px);
+    grid-template-areas: 
+      "p1 p1"
+      "fl p2"
+      "p3 lg"
+      "fi fi"
+    ;
+    align-items: center;
+    gap: 15px;
+  }
 
   .history-p1{
     grid-area: p1;
-  }
-
-  #raisingflag{
-    grid-area: flag;
+    width: 100%;
   }
 
   .history-p2{
     grid-area: p2;
-  }
-
-  #losguapos{
-    grid-area: losguapos;
+    width: 100%;
   }
 
   .history-p3{
     grid-area: p3;
+    width: 100%;
+  }
+
+  .history-finale{
+    grid-area: fi;
+    width: 100%;
+  }
+
+  #raisingflag{
+    grid-area: fl;
+    width: 400px;
+    justify-self: center;
+  }
+
+  #losguapos{
+    grid-area: lg;
+    width: 400px;
+    justify-self: center;
   }
 
   .history-img{
-    width: 320px;
+    width: 100%;
+    height: auto;
+    
+  }
+
+  label{
+    color: #0078c2;
+    font-size: 15px;
+    
+    
   }
 
   footer{
@@ -182,13 +223,24 @@ footer h6{
     
 }
 
-
 @media (max-width: 1170px){
 
   .whoarewe{
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .history-content{
+    grid-template-columns: 100%;
+    grid-template-areas: 
+      "p1"
+      "fl"
+      "p2"
+      "p3"
+      "lg"
+      "fi"
+    ;
   }
 }
 
