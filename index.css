@@ -6,37 +6,41 @@
   box-sizing: border-box;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
+
+  body::-webkit-scrollbar{
+    display: none;
+  }
   
   ol, ul {
     list-style: none;
   }
 
+  html{
+    height: 100%;
+  }
+
   body{
     background-color: whitesmoke;
-    max-width: 100%;
-    max-height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   h1, h3, h2, h4{
-    margin: 15px;
-    text-align: justify;
+    text-align:left;
   }
 
   h1{
-    font-size: 35px;
-    border-bottom: #0078c2 solid 3px;
+    font-size: 45px;
+    border-bottom: #0078c2 solid 5px;
+    border-radius: 10px;
     width: fit-content;
-  }
-
-  img{
-    border: solid #0078c2 5px;
-    border-radius: 15px;
   }
 
   hr{
     border: solid 5px #0078c2;
     border-radius: 15px;
-    margin: 15px;
+    margin: 5px;
   }
 
   .nav{
@@ -44,21 +48,55 @@
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
+    height: fit-content;
+  }
+
+  .links-index{
+    width: 100%;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
     
+  }
+  
+  .links-index>a {
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: 0.2s;
+    padding: 15px;
+  }
+
+  .links-index>a:hover{
+    background-color: #005a92;
+  }
+
+  #nav-logo-link, #nav-logo-csgo-link{
+   height: 130px;
+  }
+
+  #nav-logo, #nav-logo-csgo{
+    height: 100%;
   }
 
   #darkmode{
     background-color: #282a36;
-    width: 50px;
-    height: 50px;
-    border-radius: 40px;
-    border: solid rgb(226, 226, 1) 3px;
+    width: 40px;
+    height: 40px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: solid rgb(226, 226, 1) 2px;
+    border-top: none;
     position: fixed;
-    left: 10px;
-    top: 10px;
-    font-size: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0%;
+    font-size: 23px;
     color: whitesmoke; 
   }
   #darkmode:hover{
@@ -69,62 +107,122 @@
     color: black;
   }
 
-  #nav-logo, #nav-logo-csgo{
-    width: 170px;
+  .whoarewe{
+    display: flex;
+    gap: 15px;
+    margin: 50px;
+    
   }
 
-  .links-index{
+  .whoarewe h1{
+    margin-bottom: 20px;
+  }
+
+  #cs2banner{
+    width: 500px;
+    border-radius: 10px;
+  }
+
+  #raisingflag, #losguapos{
+    width: 400px;
+  }
+
+
+  .history{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 50px;
+  }
+
+  .history-title{
+    margin-bottom: 20px;
+  }
+
+  .history-content{
+    display: grid;
+    grid-template-columns: repeat(2, 550px);
+    grid-template-areas: 
+      "p1 p1"
+      "fl p2"
+      "p3 lg"
+      "fi fi"
+    ;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .history-p1{
+    grid-area: p1;
     width: 100%;
-    font-size: 3em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .history-p2{
+    grid-area: p2;
+    width: 100%;
+  }
+
+  .history-p3{
+    grid-area: p3;
+    width: 100%;
+  }
+
+  .history-finale{
+    grid-area: fi;
+    width: 100%;
+  }
+
+  #raisingflag{
+    grid-area: fl;
+    width: 400px;
+    justify-self: center;
+  }
+
+  #losguapos{
+    grid-area: lg;
+    width: 400px;
+    justify-self: center;
+  }
+
+  .history-img{
+    width: 100%;
+    height: auto;
+    
+  }
+
+  .logo-history{
     display: flex;
-    justify-content:center;
+    flex-direction: column;
     align-items: center;
-    gap: 25px;
-    
-  }
-  
-  .links-index>a {
-    color: white;
-    text-decoration: none;
-    border-radius: 15px;
-    padding: 30px;
-    
-
+    margin: 50px;
   }
 
-  .links-index>a:hover{
-    background-color: #005a92;
+  .logo-history h1{
+    margin-bottom: 50px;
   }
 
-  #img-trofeu{
-    width: 50vw; 
-    border-radius: 700px; 
-    margin: 25px;
-    float: right;
+  #ancient, #today{
+    width: 400px;
   }
 
-  #team-history{
-    display: block;
-  }
-
-  #team-history>h2{
-    margin-bottom: 0;
-  }
-
-  #team-history-p2{
+  .logos{
     display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 50px;
     justify-content: center;
-    align-items: center;
-    padding-top: 15px;
   }
 
-  #persecuted-img{
-    width: 35%;
+  .img-label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .warrior{
-    width: 40vw;
+
+  label{
+    color: #0078c2;
+    font-size: 15px;
   }
 
   footer{
@@ -137,6 +235,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 15px;
+    
 }
 
 footer h6{
@@ -151,136 +250,62 @@ footer h6{
     
 }
 
-.rare-div{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+@media (max-width: 1170px){
 
-.rare-image{
-  width: 25vw;
-}
-
-#team-history-p3{
-  display: flex; 
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-#team-history-p3>h2{
-  width: 50vw;
-}
-
-.warrior{
-  width: 20vw;
-}
-
-@media (max-width: 580px){
-  h1, h3, h2, h4{
-    text-align: start;
-  }
-
-  .warrior{
-    display: none;
-  }
-
-  #team-history-p3{
-    align-items: flex-start;
-  }
-
-  #team-history-p3>h2{
-    width: fit-content;
-  }
-}
-
-@media (max-width: 1120px){
-
-  #nav-logo-csgo{
-    display: none;
-  }
-
-  .links-index{
-    font-size: 2em;
-    justify-content: center;
-  }
-
-  .nav{
+  .whoarewe{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-}
 
-@media (max-width: 595px){
-  .nav{
-    display: grid;
-    grid-template-columns: 1fr;
+  .history-content{
+    grid-template-columns: 100%;
     grid-template-areas: 
-      "logo"
-      "link"
+      "p1"
+      "fl"
+      "p2"
+      "p3"
+      "lg"
+      "fi"
     ;
-    align-items: center;
-    gap: 5px;
-    
-  }
-
-  .links-index{
-    grid-area: link;
-    flex-direction: column;
-    
-  }
-
-  .links-index>a{
-    padding: 10px;
-  }
-
-  #nav-logo{
-    grid-area: logo;
-    width: 80%;
-    justify-self: center;
   }
 }
 
-@media (max-width: 799px){
-  #team-history-p3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media (max-width: 1000px){
-  #persecuted-img{
-    width: 80%;
-  }
-}
-
-@media (max-width: 1380px){
-  .rare-image{
-    width: 50%;
-  }
-  #img-trofeu{
+@media (max-width: 810px){
+  #nav-logo-csgo-link, #nav-logo-csgo{
     display: none;
   }
 
-  #img-trofeu-div{
+  #nav-logo-link{
+    height: 250px;
+  }
+
+  .nav{
     display: flex;
+    flex-direction: column;
     align-items: center;
+  }
+
+  .links-index{
     justify-content: center;
   }
 }
 
-
-@media (max-width: 1440px) {
-  #team-history-p2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+@media (max-width: 570px){
+  #cs2banner{
+    width: 90vw;
   }
 }
+
+@media (max-width: 550px){
+  .links-index{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+
 
 
 
