@@ -191,11 +191,38 @@
     
   }
 
+  .logo-history{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+  }
+
+  .logo-history h1{
+    margin-bottom: 50px;
+  }
+
+  #ancient, #today{
+    width: 400px;
+  }
+
+  .logos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  .img-label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   label{
     color: #0078c2;
     font-size: 15px;
-    
-    
   }
 
   footer{
