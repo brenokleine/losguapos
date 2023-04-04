@@ -31,8 +31,8 @@
     border-bottom: #0078c2 solid 5px;
     border-radius: 10px;
     width: fit-content;
+    margin-bottom: 15px;
   }
-
 
   hr{
     border: solid 5px #0078c2;
@@ -47,10 +47,38 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: fit-content;
   }
 
-  #nav-logo-csgo{
-    height: 170px;
+  .links-index{
+    width: 100%;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    
+  }
+  
+  .links-index>a {
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: 0.2s;
+    padding: 15px;
+  }
+
+  .links-index>a:hover{
+    background-color: #005a92;
+  }
+
+  #nav-logo-link, #nav-logo-csgo-link{
+   height: 130px;
+  }
+
+  #nav-logo, #nav-logo-csgo{
+    height: 100%;
   }
 
   #darkmode{
@@ -76,33 +104,7 @@
     color: black;
   }
 
-  #nav-logo, #nav-logo-csgo{
-    width: 170px;
-  }
-
-  .links-index{
-    width: 100%;
-    font-size: 3em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 25px;
-    
-  }
   
-  .links-index>a {
-    color: white;
-    text-decoration: none;
-    border-radius: 15px;
-    padding: 20px;
-    transition: 0.2s;
-  }
-
-  .links-index>a:hover{
-    background-color: #005a92;
-  }
-
 
   .whoarewe{
     display: flex;
@@ -110,9 +112,6 @@
     margin: 15px;
   }
 
-  .whoarewe h1{
-    margin-bottom: 15px;
-  }
 
   #cs2banner{
     width: 500px;
@@ -145,23 +144,6 @@ footer h6{
     
 }
 
-@media (max-width: 1120px){
-
-  #nav-logo-csgo{
-    display: none;
-  }
-
-  .links-index{
-    font-size: 2em;
-    justify-content: center;
-  }
-
-  .nav{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
 
 @media (max-width: 1002px){
 
@@ -172,39 +154,41 @@ footer h6{
   }
 }
 
-@media (max-width: 595px){
+@media (max-width: 802px){
+  #nav-logo-csgo-link, #nav-logo-csgo{
+    display: none;
+  }
+
+  #nav-logo-link{
+    height: 250px;
+  }
+
   .nav{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-      "logo"
-      "link"
-    ;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 5px;
-    
   }
 
   .links-index{
-    grid-area: link;
-    flex-direction: column;
-    
+    justify-content: center;
   }
+}
 
-  .links-index>a{
-    padding: 10px;
-  }
-
-  #nav-logo{
-    grid-area: logo;
-    width: 80%;
-    justify-self: center;
-  }
-
+@media (max-width: 570px){
   #cs2banner{
     width: 90vw;
   }
 }
+
+@media (max-width: 545px){
+  .links-index{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+
 
 
 
